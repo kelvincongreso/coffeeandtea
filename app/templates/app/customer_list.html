@@ -1,0 +1,11 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Customer List</h1>
+<ul>
+    {% for customer in customer %}
+        <li><a href="{% url 'customer_detail' customer.pk %}">{{ customer.first_name }}</a></li>
+    {% endfor %}
+</ul>
+<a href="{% url 'customer_create' %}">Add New Customer</a>
+{% endblock content %}

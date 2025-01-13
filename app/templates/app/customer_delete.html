@@ -1,0 +1,10 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+   <h1>Are you sure you want to delete {{ customer.first_name }}?</h1>
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit">Yes</button>
+</form>
+<a href="{% url 'customer' %}">Cancel</a>
+{% endblock content %}
