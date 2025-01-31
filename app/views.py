@@ -11,6 +11,18 @@ class HomePageView(TemplateView):
 class AboutPageView(TemplateView):
     template_name = 'app/about.html'
 
+class MenuPageView(TemplateView):
+    template_name = 'app/menu.html'
+
+class ReviewPageView(TemplateView):
+    template_name = 'app/review.html'
+
+class BookPageView(TemplateView):
+    template_name = 'app/book.html'
+
+class BookATablePageView(TemplateView):
+    template_name = 'app/book_a_table.html'
+
 class CustomerListView(ListView):
     model = Customer
     template_name = 'app/customer_list.html'

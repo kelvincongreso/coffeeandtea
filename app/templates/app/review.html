@@ -1,0 +1,89 @@
+{% load static %}
+   {% include 'app/base.html' %}
+    {% block content %}
+<link rel="stylesheet" href="home.css"/>
+<section class="review" id="review">
+
+    <h1 class="heading"> reviews <span>what people says</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                 <img src="{% static 'images/arvin.jpg' %}"
+                <img src="image/arvin.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Ang sarap sarap ng coffee dito, babalikan balikan ko to.</p>
+                <h3>Arvin Dellosa</h3>
+                <span>satisfied client</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="{% static 'images/ramces.jpg' %}"
+                <img src="image/pic-2.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>.Gantong kape, ang gusto ko, super satisfied ako dito, araw araw kotong pupuntahan</p>
+                <h3>Ramces Artales</h3>
+                <span>satisfied client</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="{% static 'images/itong.jpg' %}"
+                <img src="image/pic-3.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Yung mga coffee lover jan, puntahan niyo na to, this is a 100 percent coffee shop.</p>
+                <h3>Alexander Medalla</h3>
+                <span>satisfied client</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="{% static 'images/sabino.jpg' %}"
+                <img src="image/pic-4.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>I love this kind of coffee, napakasarap talaga, hindi kayo mag sisi sa binayad niyo.</p>
+                <h3>Sabino Arthur</h3>
+                <span>satisfied client</span>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+    {% endblock content %}

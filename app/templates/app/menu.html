@@ -1,0 +1,74 @@
+{% load static %}
+   {% include 'app/base.html' %}
+    {% block content %}
+<link rel="stylesheet" href="home.css"/>
+    <section class="menu" id="menu">
+
+    <h1 class="heading"> our menu <span>popular menu</span> </h1>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img class="mylogo" src="{% static 'images/menu-1.png' %}"
+            <img src="image/menu-1.png" alt="">
+            <div class="content">
+                <h3>Cafe Au Lait</h3>
+                <p>Coffee is a beautiful, complex beverage that has everything to do with the people you share it with.</p>
+                <span>₱499</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img class="mylogo" src="{% static 'images/menu-2.png' %}"
+            <img src="image/menu-2.png" alt="">
+            <div class="content">
+                <h3>Americano</h3>
+                <p>May your coffee be strong and your goals stronger.</p>
+                <span>₱499</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img class="mylogo" src="{% static 'images/menu-3.png' %}"
+            <img src="image/menu-3.png" alt="">
+            <div class="content">
+                <h3>Ristretto</h3>
+                <p>Coffee is the universal language.</p>
+                <span>₱499</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img class="mylogo" src="{% static 'images/menu-4.png' %}"
+            <img src="image/menu-4.png" alt="">
+            <div class="content">
+                <h3>Affogato</h3>
+                <p>In a committed relationship with my coffee cup.</p>
+                <span>₱499</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img class="mylogo" src="{% static 'images/menu-5.png' %}"
+            <img src="image/menu-5.png" alt="">
+            <div class="content">
+                <h3>Cortado Coffee</h3>
+                <p>Life begins after coffee.</p>
+                <span>₱499</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img class="mylogo" src="{% static 'images/menu-6.png' %}"
+            <img src="image/menu-6.png" alt="">
+            <div class="content">
+                <h3>Macchiato</h3>
+                <p>May your coffee be strong and your goals stronger.</p>
+                <span>₱499</span>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+    {% endblock content %}

@@ -1,6 +1,8 @@
 {% extends 'app/base.html' %}
 {% load static %}
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}"/>
+<section class="list">
     <h1>Customer List</h1>
 <ul>
     {% for customer in customer %}
@@ -8,4 +10,5 @@
     {% endfor %}
 </ul>
 <a href="{% url 'customer_create' %}">Add New Customer</a>
+
 {% endblock content %}
